@@ -1,0 +1,34 @@
+[
+	{
+		"name": "SLACoverageExperiment",
+		"configuration": {
+			"nbOfUAVs": 15,
+			"navigationStrategies":[
+				"path.LNIPathNavigation",
+				"path.CombinedLNIPathNavigation",
+				"CentralServerLNINavigation"
+			]
+		}
+	},
+	{
+		"name": "UAVConfigurationExperiment",
+		"configuration": {
+			"minNbOfUAVs": 1,
+			"maxNbOfUAVs": 15,
+			"uavStep": 1,
+			"navigationStrategies":[
+				"path.LNIPathNavigation",
+				"path.CombinedLNIPathNavigation",
+				"CentralServerLNINavigation"
+			],
+			"uavConfigurations":[
+				{
+					"rechargeTime":30,
+					"broadcastRadius":5.0,
+					"speedKmHour":60.0,
+					"batteryLife":120
+				}
+			]
+		}
+	}
+]

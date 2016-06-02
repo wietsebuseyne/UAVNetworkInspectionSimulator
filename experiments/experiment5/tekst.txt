@@ -1,0 +1,5 @@
+0: LNI, ook als pad al ergens geinspecteerd wordt door andere UAV
+1: zonder correctie als alle paden al geinspecteerd worden
+2: als alle paden geinspecteerd worden, kies dan nog steeds degene met de LNI edge
+
+duiding: vooral met kleine netwerken is dit belangrijk

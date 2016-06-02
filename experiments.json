@@ -1,0 +1,22 @@
+[
+	{
+		"name": "UAVConfigurationExperiment",
+		"configuration": {
+			"minNbOfUAVs": 25,
+			"maxNbOfUAVs": 33,
+			"uavStep": 1,
+			"navigationStrategies":[
+				"path.LNIPathNavigation",
+				"path.CombinedLNIPathNavigation"
+			],
+			"uavConfigurations":[
+				{
+					"rechargeTime":30,
+					"broadcastRadius":5.0,
+					"speedKmHour":60.0,
+					"batteryLife":120
+				}
+			]
+		}
+	}
+]

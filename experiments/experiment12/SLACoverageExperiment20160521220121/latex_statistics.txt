@@ -1,0 +1,4 @@
+Strategy & Avg Cov & Lowest Cov & SLA SD & Global SD \\ \hline
+CentralServerLNINavigation & 99.979 & 90.416 & 0.27798 & 0.036345\\
+SecondOrderRooted_CS_LNI_Navigation & 99.998 & 98.357 & 0.058818 & 0.015908\\
+ACONavigation & 99.98 & 92.059 & 0.2531 & 0.066239\\

@@ -1,0 +1,4 @@
+Strategy & Avg Cov & Lowest Cov & SLA SD & Time SD \\ \hline
+LNIPathNavigation & 99.5 & 94.102 & 1.288 & 1.2988\\
+CombinedLNIPathNavigation & 99.582 & 93.61 & 1.1371 & 1.1738\\
+CentralServerLNINavigation & 99.862 & 96.341 & 0.64135 & 0.64274\\

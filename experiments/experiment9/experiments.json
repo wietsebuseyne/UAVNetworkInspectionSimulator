@@ -1,0 +1,24 @@
+[
+	{
+		"name": "EventImpactExperiment",
+		"configuration": {
+			"minNbOfUAVs": 1,
+			"maxNbOfUAVs": 25,
+			"uavStep": 1,
+			"navigationStrategies":[
+				"CentralServerLNINavigation",
+				"CycleNavigation"
+			],
+			"eventGenerators": [
+				{
+					"event": "failure",
+					"type": "probabilistic",
+					"intervalBetween": 60,
+					"likelihood": 0.001,
+					"minTimeToRevive": 1440,
+					"maxTimeToRevive": 2880
+				}
+			]
+		}
+	}
+]

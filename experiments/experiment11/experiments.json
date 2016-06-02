@@ -1,0 +1,50 @@
+[
+	{
+		"name": "ACOConfigurationExperiment",
+		"configuration": {
+			"nbOfUAVs": 10,
+			"nbOfConfigurations": 10,
+			"nbOfSimulationsPerConfiguration": 5,
+			"implementation": "LNI"
+		}
+	},
+	{
+		"name": "ACOConfigurationExperiment",
+		"configuration": {
+			"nbOfUAVs": 10,
+			"nbOfConfigurations": 10,
+			"nbOfSimulationsPerConfiguration": 5,
+			"implementation": "LNINeighbour"
+		}
+	},
+	{
+		"name": "ACOConfigurationExperiment",
+		"configuration": {
+			"nbOfUAVs": 10,
+			"nbOfConfigurations": 10,
+			"nbOfSimulationsPerConfiguration": 5,
+			"implementation": "LNINeighbourOnly"
+		}
+	},	
+	{
+		"name": "UAVConfigurationExperiment",
+		"configuration": {
+			"minNbOfUAVs": 1,
+			"maxNbOfUAVs": 15,
+			"uavStep": 1,
+			"navigationStrategies":[
+				"ACONavigation_A11.75_B8.54_LNI",
+				"ACONavigation_A13.01_B3.11_LNINeighbour",
+				"ACONavigation_A12.12_B2.41_LNINeighbourOnly"			
+			],
+			"uavConfigurations":[
+				{
+					"rechargeTime":30,
+					"broadcastRadius":5.0,
+					"speedKmHour":60.0,
+					"batteryLife":120
+				}
+			]
+		}
+	}
+]

@@ -1,0 +1,34 @@
+{
+	"network":"nw-belgium-hv.json",
+	"inspectionDaysPerMonth":30,
+	"inspectionMinutesPerDay":240,
+	"steps":262800,
+	"navigationStrategies":[],
+	"nodesInspectionNeeded":0,
+	"edgesInspectionNeeded":1440,
+	"averageCoverageGoal":95,
+	"coveragePerSLAGoal":80,
+	"minResponseTime":1440,
+	"uavFlyingTime":true,
+	"addRechargeNodes": true,
+	"uavConfiguration":{
+		"rechargeTime":30,
+		"broadcastRadius":5.0,
+		"speedKmHour":60.0,
+		"batteryLife":120
+	},
+	"eventGenerators": [
+		{
+			"event": "node",
+			"type": "probabilistic",
+			"intervalBetween": 1440,
+			"likelihood": 0.001
+		},
+		{
+			"event": "edge",
+			"type": "probabilistic",
+			"intervalBetween": 1440,
+			"likelihood": 0.001
+		}
+	]
+}

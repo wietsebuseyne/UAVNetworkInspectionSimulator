@@ -1,0 +1,3 @@
+Strategy & Avg Cov & Lowest Cov & SLA SD & Global SD \\ \hline
+CycleNavigation & 69.782 & 56.253 & 12.774 & 3.7779\\
+CentralServerLNINavigation & 67.696 & 46.805 & 7.1205 & 4.4313\\

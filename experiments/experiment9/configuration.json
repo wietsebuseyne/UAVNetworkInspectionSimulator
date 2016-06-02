@@ -1,0 +1,27 @@
+{
+	"network":"nw-belgium-hv.json",
+	"inspectionDaysPerMonth":30,
+	"inspectionMinutesPerDay":240,
+	"steps":216000,
+	"nodeInspectionSLAs":0,
+	"edgeInspectionSLAs":1440,
+	"responseTimeSLA": 0,
+	"averageCoverageGoal": 99,
+	"coveragePerSLAGoal": 95,
+	"uavConfiguration": {
+		"rechargeTime":5,
+		"broadcastRadius":5.0,
+		"speedKmHour":20.0,
+		"batteryLife":30
+	},
+	"eventGenerators": [
+		{
+			"event": "failure",
+			"type": "probabilistic",
+			"intervalBetween": 60,
+			"likelihood": 0.001,
+			"minTimeToRevive": 1440,
+			"maxTimeToRevive": 2880
+		}
+	]
+}
