@@ -2,8 +2,8 @@
 	{
 		"name": "UAVConfigurationExperiment",
 		"configuration": {
-			"minNbOfUAVs": 25,
-			"maxNbOfUAVs": 33,
+			"minNbOfUAVs": 1,
+			"maxNbOfUAVs": 50,
 			"uavStep": 1,
 			"navigationStrategies":[
 				"path.LNIPathNavigation",

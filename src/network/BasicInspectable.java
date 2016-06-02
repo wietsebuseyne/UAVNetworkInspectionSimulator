@@ -1,6 +1,7 @@
 package network;
 
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
 
 import sim.engine.Schedule;
@@ -61,13 +62,14 @@ public abstract class BasicInspectable implements Inspectable {
 
 	@Override
 	public void inspectionNeeded(Schedule schedule) {
+		if(!needsInspection && inspectionNeededTimes != null)
+			inspectionNeededTimes.add(schedule.getSteps());
 		this.needsInspection = true;
-		inspectionNeededTimes.add(schedule.getSteps());
 	}
 
 	@Override
 	public List<Long> getInspectionNeededTimes() {
-		return inspectionNeededTimes;
+		return inspectionNeededTimes == null ? Collections.emptyList() : Collections.unmodifiableList(inspectionNeededTimes);
 	}
 
 	@Override
